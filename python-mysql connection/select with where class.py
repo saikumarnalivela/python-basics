@@ -19,7 +19,7 @@ def main():
     )
     mycursor = connobj.cursor()
     try:
-        sql = "select * from animal where place = 'warangal' "
+        sql = "select * from animal order by name"
         mycursor.execute(sql)
     except:
         print('error in creating the table')
